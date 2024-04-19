@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+    <!-- Dashboard -->
+    <div class="container-xxl position-relative bg-white d-flex p-0">
+        {% include "dashboard/sidebar.html" %}
+        <!-- Content Start -->
+        <div class="content">
+            {% include 'dashboard/navbar.html' %}
+                <div class="container-fluid pt-4 px-4 g-4">
+                    {% block dashboard %}
+                    {% endblock %} 
+                </div>
+            {% include "dashboard/footer.html" %}
+        </div>
+    </div>
+    <!-- Navbar -->
+
+<script>
+</script>
+
+{% endblock content %}

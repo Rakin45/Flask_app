@@ -1,0 +1,19 @@
+{% extends 'base.html'%}
+{% block title%}Home | {% endblock%}
+{% block content %}
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
+    <a href="{{ url_for('api_bp.home' ) }}" class="sidebar-toggler flex-shrink-0">
+        <!-- <i class="fa fa-home"></i> -->
+        <h2 class="text-primary">
+            {% if appinfo %}{{appinfo.name}}{% endif %}
+        </h2>
+    </a>
+    <div class="navbar-nav align-items-center ms-auto">
+        <a href="{{ url_for('api_bp.login' ) }}" class=" btn btn-outline-secondary rounded-pill m-2">Login</a>
+        <a href="{{ url_for('api_bp.signup' ) }}" class="btn btn-primary rounded-pill m-2">Signup</a>
+</nav>
+<!-- Navbar End -->
+
+
+{% endblock %}

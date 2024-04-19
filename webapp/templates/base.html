@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+    
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+    
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+        
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    
+        <!-- Libraries Stylesheet -->
+        <link href="{{url_for('static', filename='lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+        <link href="{{url_for('static', filename='lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css')}}" rel="stylesheet" />
+    
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="{{url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+
+        <!-- Datatable css -->
+        <link rel="stylesheet" href="https://cdn.datatables.net/2.0.3/css/dataTables.bootstrap5.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/responsive/3.0.1/css/responsive.bootstrap5.css">
+
+        <!-- Plotly library -->
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    
+        <!-- Template Stylesheet -->
+        <link href="{{url_for('static', filename='css/style.css')}}" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+        <title>{%block title%}{% endblock %}{% if appinfo %}{{appinfo.name}}{% endif %}</title>
+    </head>
+<body>
+    <!-- Content End-->
+    {% block content %}
+    {% endblock%}
+    {% include "svgs.html" %}
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    -->
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="{{url_for('static', filename='lib/chart/chart.min.js')}}"></script>
+        <script src="{{url_for('static', filename='lib/easing/easing.min.js')}}"></script>
+        <script src="{{url_for('static', filename='lib/waypoints/waypoints.min.js')}}"></script>
+        <script src="{{url_for('static', filename='lib/owlcarousel/owl.carousel.min.js')}}"></script>
+        <script src="{{url_for('static', filename='lib/tempusdominus/js/moment.min.js')}}"></script>
+        <script src="{{url_for('static', filename='lib/tempusdominus/js/moment-timezone.min.js')}}"></script>
+        <script src="{{url_for('static', filename='lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js')}}"></script>
+
+        <!-- DataTable file -->
+        <script src="//cdn.datatables.net/2.0.3/js/dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/2.0.3/js/dataTables.bootstrap5.js"></script>
+        <script src="https://cdn.datatables.net/responsive/3.0.1/js/dataTables.responsive.js"></script>
+        <script src="https://cdn.datatables.net/responsive/3.0.1/js/responsive.bootstrap5.js"></script>
+        <!-- Template Javascript -->
+        <script src="{{url_for('static', filename='js/main.js')}}"></script>
+        <script src="{{url_for('static', filename='js/index.js')}}"></script>
+
+        
+</body>
+</html>

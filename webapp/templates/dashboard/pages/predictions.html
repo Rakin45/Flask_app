@@ -1,0 +1,63 @@
+{% extends "dashboard/base.html" %}
+
+{% block title %}Predictions | {% endblock title %}
+
+{% block dashboard %}
+<div class="row g-4">
+    <div class="col-12">
+<table id="water_quality_data_table" class="table table-striped nowrap" style="width:100%">
+    <thead>
+        <tr>
+            <th>Location ID</th>
+            <th data-priority="1">Location Name</th>
+            <th>Date</th>
+            <th>Spec_Cond_Max</th>
+            <th>PH_Max</th>
+            <th>PH_Min</th>
+            <th>Spec_Cond_Min</th>
+            <th>Spec_Cond_Mean</th>
+            <th>Dissolved_Oxy_Max</th>
+            <th>Dissolved_Oxy_Mean</th>
+            <th>Dissolved_Oxy_Min</th>
+            <th>Temp Mean</th>
+            <th>Temp Min</th>
+            <th>Temp Max</th>
+            <th>Training</th>
+            <th data-priority="2">Water Quality</th>
+        </tr>
+    </thead>
+</table>
+</div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('#water_quality_data_table').DataTable({
+            responsive: true,
+            ajax: {
+                url: '/water_quality_data',
+                dataSrc: ''
+            },
+            columns: [
+                { data: 'Location ID' },
+                { data: 'Location Name' },
+                { data: 'Date' },
+                { data: 'Spec_Cond_Max' },
+                { data: 'PH_Max' },
+                { data: 'PH_Min' },
+                { data: 'Spec_Cond_Min' },
+                { data: 'Spec_Cond_Mean' },
+                { data: 'Dissolved_Oxy_Max' },
+                { data: 'Dissolved_Oxy_Mean' },
+                { data: 'Dissolved_Oxy_Min' },
+                { data: 'Temp Mean' },
+                { data: 'Temp Min' },
+                { data: 'Temp Max' },
+                { data: 'Training' },
+                { data: 'Water Quality' },
+            ],
+
+        })//end of the datatable
+    })
+</script>
+{% endblock dashboard %}

@@ -1,0 +1,266 @@
+{% extends "dashboard/base.html" %}
+
+{% block title %}Insights | {% endblock title %}
+
+{% block dashboard %}
+<div class="row my-4">
+    <div class="col-md-6 mx-auto">
+        <form id="myForm">
+        <div class="d-flex">
+            <select id="location" name="site-number" class="form-select" required>
+                <option value="">Choose the Location</option>
+                {% if locations %}
+                    {% for location in locations %}
+                        <option value="{{location.site_number}}">{{location.location_name}}</option>
+                    {% endfor %}
+                {% endif %}
+            </select>
+            <input type="submit" value="Generate" class="btn btn-primary">
+        </div>
+        </form>
+        
+        
+    </div>
+</div>
+<div class="row g-4">
+
+    
+    <!-- <div class="col-sm-12 col-xl-6">
+        <h1>Water Quality Data Visualizations</h1>
+    </div> -->
+    <div class="col-sm-12 col-xl-6">
+        <div class="bg-light rounded h-100 p-4">
+            <!-- <h6 class="mb-4">Single Line Chart</h6> -->
+            <div id="plot-container-1"></div>
+        </div>
+    </div>
+    <div class="col-sm-12 col-xl-6">
+        <div class="bg-light rounded h-100 p-4">
+            <!-- <h6 class="mb-4">Single Line Chart</h6> -->
+            <div id="plot-container-2"></div>
+        </div>
+    </div>
+    <div class="col-sm-12 col-xl-6">
+        <div class="bg-light rounded h-100 p-4">
+            <!-- <h6 class="mb-4">Single Line Chart</h6> -->
+            <div id="plot-container-3"></div>
+        </div>
+    </div>
+    <div class="col-sm-12 col-xl-6">
+        <div class="bg-light rounded h-100 p-4">
+            <!-- <h6 class="mb-4">Single Line Chart</h6> -->
+            <div id="plot-container-4"></div>
+        </div>
+    </div>
+    <div class="col-sm-12 col-xl-6">
+        <div class="bg-light rounded h-100 p-4">
+            <!-- <h6 class="mb-4">Single Line Chart</h6> -->
+            <div id="plot-container-5"></div>
+        </div>
+    </div>
+    <div class="col-sm-12 col-xl-6">
+        <div class="bg-light rounded h-100 p-4">
+            <!-- <h6 class="mb-4">Single Line Chart</h6> -->
+            <div id="plot-map"></div>
+        </div>
+    </div>
+
+  
+</div>
+<script>
+
+    function displayPlot(data,locationData){
+        var trainingTrue = data.filter(row => row['training']);
+            var trainingFalse = data.filter(row => !row['training']);
+
+            trace_train_true = {
+                y: trainingTrue.map(row => row['spec_cond_max']),
+                type: 'box',
+                name: "Training (True)"
+            }
+            trace_train_false = {
+                y: trainingFalse.map(row => row['spec_cond_max']),
+                type: 'box',
+                name: "Training (False)"
+            }
+            var layout1 = {
+                title: 'Specific Conductivity (Max) by Training Category',
+                yaxis: {
+                    title: 'Specific Conductivity (Max)',
+                    // Adjust yaxis range based on your data (optional)
+                    range: [0.0005263157894736, 1.0]
+                },
+                boxmode: 'group'  // Group boxes for comparison
+            };
+
+
+            // Histogram: Distribution (Dissolved Oxygen Mean)
+            var trace2 = {
+                x: data.map(row => row['dissolved_oxy_mean']),
+                type: 'histogram',
+                xbins: {
+                    start: Math.min(...data.map(row => row['dissolved_oxy_mean'])),
+                    end: Math.max(...data.map(row => row['dissolved_oxy_mean'])),
+                    size: 0.1
+                }
+            };
+            var layout2 = {
+                title: 'Dissolved Oxygen (Mean) Distribution',
+            };
+            // Scatter Plot: Dissolved Oxygen (Mean) vs. Temperature (Mean)
+            var trace3 = {
+                x: data.map(row => row['temp_mean']),
+                y: data.map(row => row['dissolved_oxy_mean']),
+                mode: 'markers',
+                text: data.map(row => row['date']),  // Add date labels to points
+                marker: {
+                    size: 10,  // Adjust marker size
+                    opacity: 0.7  // Adjust marker opacity
+                }
+            };
+            var layout3 = {
+                title: 'Dissolved Oxygen (Mean) vs. Temperature (Mean)',
+                xaxis: { title: 'Temperature (Mean)' },
+                yaxis: { title: 'Dissolved Oxygen (Mean)' },
+                hovermode: 'closest'  // Enable hover interactions
+            };
+
+            // Distribution: Specific Conductivity Over Time
+            var trace4 = {
+                x: data.map(row => new Date(row['date'])),  // Convert date strings to Date objects
+                y: data.map(row => row['spec_cond_max']),
+                mode: 'lines',
+                marker: {
+                    size: 5  // Adjust marker size
+                }
+            };
+            var layout4 = {
+                title: 'Specific Conductivity (Max) Over Time',
+                xaxis: { title: 'Date', type: 'date' },  // Set x-axis type for time series
+                yaxis: { title: 'Specific Conductivity (Max)' }
+            };
+            // Distribution of Water Quality Parameters
+            trace_dis_oxy_mean = {
+                y: data.map(row=>row['dissolved_oxy_mean']),
+                type: 'box',
+                name: 'Dissolved Oxy Mean'
+            }
+            trace_spec_cond_max = {
+                y: data.map(row=>row['spec_cond_max']),
+                type: 'box',
+                name: 'Specific Conductiviy (Max)'
+            }
+            trace_temp_min = {
+                y: data.map(row=>row['temp_min']),
+                type: 'box',
+                name: 'Tempreture Min'
+            }
+
+            var layout5 = {
+                title: 'Distribution of Water Quality Parameters',
+                yaxis: { title: 'Parameter Value' },
+                boxmode: 'group'  // Group boxes for comparison
+            };
+            // Render multiple plots in a single container (optional):
+            // Plotly.newPlot('plot-container', [trace1, trace2], {showlegend: false});
+
+            // Or render plots in separate containers (uncomment and adjust container IDs):
+            // Plotly.newPlot('plot-container', [trace1], layout);
+            Plotly.newPlot('plot-container-1', [trace_train_true, trace_train_false], layout1);
+            Plotly.newPlot('plot-container-2', [trace2], layout2);
+            Plotly.newPlot('plot-container-3', [trace3], layout3);
+            Plotly.newPlot('plot-container-4', [trace4], layout4);
+            Plotly.newPlot('plot-container-5', [trace_dis_oxy_mean, trace_spec_cond_max, trace_temp_min], layout5);
+
+
+
+
+            const latitude = [locationData.latitude]; // Example latitude value
+            const longitude = [locationData.longitude]; // Example longitude value
+            const locationName = [locationData.location_name]; // Example location name
+          
+            // Create trace for scattermapbox plot
+            const trace = {
+              type: 'scattermapbox',
+              lat: latitude,
+              lon: longitude,
+              mode: 'markers',
+              marker: {
+                size: 10,
+                color: 'blue' // Marker color
+              },
+              text: locationName, // Location name as text
+              hoverinfo: 'text' // Show text on hover
+            };
+          
+            // Define layout for scattermapbox plot
+            const layout = {
+              title: 'Location on Map',
+              mapbox: {
+                //style: 'dark', // Mapbox style
+                center: { lat: locationData.latitude, lon: locationData.longitude }, // Set center to New York City
+                zoom: 10 // Adjust zoom level as needed
+              },
+              margin: { l: 0, r: 0, t: 30, b: 0 } // Adjust plot margin
+            };
+
+            Plotly.setPlotConfig({
+                mapboxAccessToken: "pk.eyJ1IjoidmljdG9yMDA3OTAiLCJhIjoiY2tzYWJydGE5MDUxOTJucnZ6Ynl1c2R0dyJ9.QODOc3wewlZjNkkl6360Kg"
+            });
+          
+            // Plot data on map
+            Plotly.newPlot('plot-map', [trace], layout);
+    }
+
+
+    $(document).ready(function() {
+        // $.getJSON('/visualization_data', function(data) {
+        //     // Box Plot (Specific Conductivity Max) by Training Category
+        //     displayPlot(data)
+
+        // });
+
+
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Get form data
+        const formData = new FormData(event.target);
+
+        // Convert form data to object
+        const formDataObject = {};
+        formData.forEach((value, key) => {
+            formDataObject[key] = value;
+        });
+
+        // Make POST request to Flask endpoint
+        fetch('/visualization_data', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formDataObject)
+        })
+        .then(response => {
+            if (response.ok) {
+                // Handle successful response
+                console.log('Form data sent successfully');
+                return response.json(); // Optionally handle response data
+            } else {
+                throw new Error('Failed to send form data');
+            }
+        })
+        .then(data =>{
+            console.log(data)
+            displayPlot(data.plotData,data.location)
+        })
+        .catch(error => {
+            // Handle error
+            console.error('Error:', error);
+        });
+    });
+
+
+    });
+</script>
+{% endblock dashboard %}

@@ -1,0 +1,151 @@
+{% extends "dashboard/base.html" %}
+
+{% block title %}Dashboard | {% endblock title %}
+
+{% block dashboard %}
+<div class="row g-4">
+    <div class="col-sm-12">
+        <div class="bg-light rounded h-100 p-4">
+            <h6 class="mb-4">Predict Water Quality</h6>
+            <form class="row g-3" id="predict-form">
+                <div class="col-md-4">
+                    <label for="spec_cond_max" class="form-label">Specific Conductace Max</label>
+                    <input type="number" step="any" class="form-control" id="spec_cond_max" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="spec_cond_min" class="form-label">Specific Conductace Min</label>
+                    <input type="number" step="any" class="form-control" id="spec_cond_min" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="spec_cond_mean" class="form-label">Specific Conductace Mean</label>
+                    <input type="number" step="any" class="form-control" id="spec_cond_mean" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="ph_max" class="form-label">PH Max</label>
+                    <input type="number" step="any" class="form-control" id="ph_max" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="ph_min" class="form-label">PH Min</label>
+                    <input type="number" step="any" class="form-control" id="ph_min" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="dissolved_oxy_min" class="form-label">Dissolved O2 Min</label>
+                    <input type="number" step="any" class="form-control" id="dissolved_oxy_min" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="dissolved_oxy_max" class="form-label">Dissolved O2 Max</label>
+                    <input type="number" step="any" class="form-control" id="dissolved_oxy_max" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="dissolved_oxy_mean" class="form-label">Dissolved O2 Mean</label>
+                    <input type="number" step="any" class="form-control" id="dissolved_oxy_mean" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="temp_min" class="form-label">Tempreture Min</label>
+                    <input type="number" step="any" class="form-control" id="temp_min" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="temp_max" class="form-label">Tempreture Max</label>
+                    <input type="number" step="any" class="form-control" id="temp_max" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="temp_mean" class="form-label">Tempreture Mean</label>
+                    <input type="number" step="any" class="form-control" id="temp_mean" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="training" class="form-label">Training</label>
+                    <select id="training" class="form-select" required>
+                        <option value="">Choose the value</option>
+                        <option value="1">True</option>
+                        <option value="0">False</option>
+                      </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="location" class="form-label">Location</label>
+                    <select id="location" class="form-select" required>
+                        <option value="">Choose the Location</option>
+                        {% if locations %}
+                            {% for location in locations %}
+                                <option value="{{location.location_id}}">{{location.location_name}}</option>
+                            {% endfor %}
+                        {% endif %}
+                      </select>
+                </div>
+                <div id="pred-status">
+                    <div id="pred-loader" style="display: none;">
+                        <div class="d-flex align-items-center" >
+                            <strong>Predicting...</strong>
+                            <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div>
+                        </div>
+                    </div>
+                    <div id="pred-success" style="display: none;">
+                        <div class="alert alert-success d-flex align-items-center" role="alert">
+                            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+                            <div>
+                              Water Quality : <span id="pred-value" class=""></span>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Predict</button>
+                  <button class="btn btn-warning" type="reset">Reset</button>
+                </div>
+              </form>
+        </div>
+    </div>
+</div>
+<script>
+    function getCookie(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return parts.pop().split(';').shift();
+    }
+    document.getElementById('predict-form').addEventListener('submit', (event) => {
+        event.preventDefault(); // Prevent default form submission
+        // show the loader    
+        document.getElementById('pred-loader').style.display = 'block';
+        document.getElementById('pred-success').style.display = 'none';
+
+        const data = {
+        'spec_cond_max':document.getElementById('spec_cond_max').value,
+        'spec_cond_min':document.getElementById('spec_cond_min').value,
+        'spec_cond_mean':document.getElementById('spec_cond_mean').value,
+        'ph_max':document.getElementById('ph_max').value,
+        'ph_min':document.getElementById('ph_min').value,
+        'dissolved_oxy_max':document.getElementById('dissolved_oxy_max').value,
+        'dissolved_oxy_mean':document.getElementById('dissolved_oxy_mean').value,
+        'dissolved_oxy_min':document.getElementById('dissolved_oxy_min').value,
+        'temp_mean':document.getElementById('temp_mean').value,
+        'temp_min':document.getElementById('temp_min').value,
+        'temp_max':document.getElementById('temp_max').value,
+        'training':document.getElementById('training').value,
+        'location': document.getElementById('location').value,
+        }
+        fetch("/make-prediction", {
+            method: 'POST',
+            headers: {
+                'X-CSRF-TOKEN': getCookie('csrf_access_token'),
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+
+        })
+        .then(response=>response.json())
+        .then(data=>{
+           console.log(data)
+           if(data.prediction){
+               // hide the loader
+               document.getElementById('pred-loader').style.display = 'none';
+               // Show the prediction value
+               document.getElementById('pred-success').style.display = 'block';
+               document.getElementById('pred-value').innerText = data.prediction
+           }
+
+        })
+        .catch(error => console.error(error));
+    });
+</script>
+{% endblock%}

@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+
+{% block title %}Login | {% endblock title %}
+
+{% block content %}
+
+
+<!-- Sign In Start -->
+<div class="container-fluid">
+    <div class="row h-100 align-items-center justify-content-center" style="min-height: 100vh">
+        <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+            <div class="bg-light rounded p-4 p-sm-5 my-4 mx-3">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <a href="{{ url_for('api_bp.home' ) }}" class="">
+                        <h3 class="text-primary">
+                            {% if appinfo %}{{appinfo.name}}{% endif %}
+                        </h3>
+                    </a>
+                    <h3>Log In</h3>
+                </div>
+                <form id="login-form" method="POST"
+                    enctype="application/x-www-form-urlencoded">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="username" placeholder="username" />
+                    <label for="username">Username</label>
+                </div>
+                <div class="form-floating mb-4">
+                    <input type="password" class="form-control" id="password" placeholder="Password" />
+                    <label for="password">Password</label>
+                </div>
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                        <label class="form-check-label" for="exampleCheck1">Keep me logged in</label>
+                    </div>
+                    <!-- <a href="">Forgot Password</a> -->
+                </div>
+                <!-- Show the Flash Message -->
+                <div id="login-success-message" class="alert alert-success" role="alert" style="display: none;">
+                    <ul class="mb-0 p-2 ">
+                        <div id="success-message"></div>
+                        <!-- <a href="{{ url_for('api_bp.login') }}">Login</a> -->
+                    </ul>
+                </div>
+                <div id="login-danger-message" class="alert alert-danger" role="alert" style="display: none;">
+                    <ul class="mb-0 p-2 ">
+                        <div id="danger-message"></div>
+                        <!-- <a href="{{ url_for('api_bp.login') }}">Login</a> -->
+                    </ul>
+                </div>
+                
+
+                <!-- Show Flash Message End -->
+                <button type="submit" class="btn btn-primary py-3 w-100 mb-4">
+                    Log In
+                </button>
+                </form>
+                <p class="text-center mb-0">
+                    Don't have an Account? <a href="{{ url_for('api_bp.signup' ) }}">Sign Up</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Sign In End -->
+<script>
+
+    
+    // // Formhanding
+    document.getElementById('login-form').addEventListener('submit', (event) => {
+        event.preventDefault(); // Prevent default form submission
+
+        const data = {
+            username: document.getElementById('username').value,
+            password: document.getElementById('password').value
+        };
+
+        fetch("/login", {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+        })
+            .then(response => response.json())
+            .then(data => {
+                
+                console.log(data)
+                if (data.message === "Login successful!") {
+                    //localStorage.setItem("jwt-token", data.access_token);
+                    console.log(data)
+                    // Show
+                    document.getElementById('success-message').innerText = data.message;
+                    document.getElementById('login-success-message').style.display = 'block';
+                    // Handle successful signup (e.g., display success message, redirect to login)
+                    window.location.href = data.redirectURL
+                    console.log('Signup successful!');
+                    // Redirect to login page or show a success message
+                } else {
+                    // Handle errors (e.g., display error message)
+                    // Show
+                    document.getElementById('danger-message').innerText = data.message;
+                    document.getElementById('login-danger-message').style.display = 'block';
+
+                    console.error(data.message);
+                }
+            })
+            .catch(error => console.error(error));
+    });
+
+
+
+</script>
+
+{% endblock %}

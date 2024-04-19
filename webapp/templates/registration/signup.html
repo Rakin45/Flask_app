@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+
+{% block title %}Signup | {% endblock title %}
+
+{% block content %}
+
+<!-- Sign Up Start -->
+<div class="container-fluid">
+    <div class="row h-100 align-items-center justify-content-center" style="min-height: 100vh;">
+        <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+
+            <div class="bg-light rounded p-4 p-sm-5 my-4 mx-3">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <a href="{{ url_for('api_bp.home' ) }}" class="">
+                        <!-- <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>DASHMIN</h3> -->
+                        <h3 class="text-primary">{% if appinfo %}{{appinfo.name}}{% endif %}</h3>
+                    </a>
+                    <h3>Sign Up</h3>
+                </div>
+                <form id="signup-form" method="POST"
+                    enctype="application/x-www-form-urlencoded">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="username" placeholder="jhondoe" name="username">
+                        <label for="username">Username</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email">
+                        <label for="email">Email address</label>
+                    </div>
+                    <div class="form-floating mb-4">
+                        <input type="password" class="form-control" id="password" placeholder="Password"
+                            name="password">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                            <label class="form-check-label" for="exampleCheck1">I agree to terms</label>
+                        </div>
+                        <!-- To be implemented by user -->
+                    </div>
+                    <!-- Show the Flash Message -->
+                   
+
+                    <div id="signup-success-message" class="alert alert-success" role="alert" style="display: none;">
+                        <ul class="mb-0 p-2 d-flex align-items-center justify-content-between">
+                            <div id="success-message"></div>
+                            <a href="{{ url_for('api_bp.login') }}">Login</a>
+                        </ul>
+                    </div>
+                    <div id="signup-fail-message" class="alert alert-danger" role="alert" style="display: none;">
+                        <ul class="mb-0 p-2 d-flex align-items-center justify-content-between">
+                            <div id="fail-message"></div>
+                        </ul>
+                    </div>
+                    
+                    <input id="successURL" type="hidden" name="successURL" value="{{url_for('api_bp.login')}}"></input>
+
+                    <!-- Show Flash Message End -->
+                    <button type="submit" class="btn btn-primary py-3 w-100 mb-4">Sign Up</button>
+                    <p class="text-center mb-0">Already have an Account? <a href="{{ url_for('api_bp.login' ) }}">Log
+                            In</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // // Formhanding
+    document.getElementById('signup-form').addEventListener('submit', (event) => {
+        // Hiding the success and faliure message on the form-submit
+        document.getElementById('signup-success-message').style.display = 'none';
+        document.getElementById('signup-fail-message').style.display = 'none';
+        event.preventDefault(); // Prevent default form submission
+
+        const data = {
+            username: document.getElementById('username').value,
+            email: document.getElementById('email').value,
+            password: document.getElementById('password').value
+        };
+        console.log(data) // to be commented
+        fetch("/signup", {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.message === "Signup successful!") {
+                    // Show
+                    document.getElementById('success-message').innerText = data.message;
+                    document.getElementById('signup-success-message').style.display = 'block';
+                    // Handle successful signup (e.g., display success message, redirect to login)
+                    document.getElementById('signup-form').reset()
+                } else {
+                    // document.getElementById('fail-message').innerText = data.message;
+                    // document.getElementById('signup-fail-message').style.display = 'block';
+
+                    // console.log('orange is new black is running')
+                    // // Handle errors (e.g., display error message)
+                    // console.error(data.message);
+                }
+            })
+            .catch(error =>{
+                console.error(error)
+                document.getElementById('fail-message').innerText = "Username or email already exists";
+                document.getElementById('signup-fail-message').style.display = 'block';
+                document.getElementById('signup-form').reset()
+
+                // console.log('orange is new black is running')
+                // Handle errors (e.g., display error message)
+                console.error(data.message);
+            } );
+    });
+
+
+</script>
+<!-- Sign Up End -->
+{% endblock %}
+
+<!-- 
+
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+{% if messages %}
+<div class="alert alert-success" role="alert">
+    <ul class="mb-0 p-2 d-flex align-items-center justify-content-between">
+        {% for category, message in messages %}
+        {% if category == "signup_success" %}
+        <div>{{message}}</div>
+        <a href="{{ url_for('api_bp.login') }}">Login</a>
+         <form method="get" action="{{ url_for('api_bp.login') }}">
+    <button type="submit" class="btn btn-link m-2">Login!</button>
+</form> 
+        {% else %}
+        <div class="alert alert-warning" role="alert">
+            {{ message }} </div>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}
+{% endwith %}  
+
+
+
+ {% with messages = get_flashed_messages(with_categories=true) %}
+                        {% if messages %}
+                            <ul class="flashes">
+                            {% for category, message in messages %}
+                                <li>{{ message }}</li>
+                            {% endfor %}
+                            </ul>
+                        {% endif %}
+                    {% endwith %}
+
+
+-->

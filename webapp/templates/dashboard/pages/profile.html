@@ -1,0 +1,96 @@
+{% extends "dashboard/base.html" %}
+
+{% block title %}Profile | {% endblock title %}
+
+{% block dashboard %}
+    <div class="row g-4">
+        <div class="col-sm-12 col-xl-6">
+            <div class="bg-light rounded h-100 p-4">
+                <h6 class="mb-4">Edit Profile</h6>
+                <form id="profile-update">
+                    <div class="mb-3">
+                        <label for="new-email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="new-email" value="{{user.email}}">
+                    </div>
+                    <div class="mb-3">
+                        <label for="new-password" class="form-label">Set new Password</label>
+                        <input type="password" class="form-control" id="new-password">
+                    </div>
+                    <div id="success-profile-update"></div>
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row g-4 mt-2">
+        <div class="col-sm-12 col-xl-6">
+            <div class="bg-light rounded h-100 p-4">
+                <h6 class="mb-4">Delete Profile</h6>
+                <form id="profile-delete">
+                    <div id="success-profile-delete"></div>
+                    <button type="submit" class="btn btn-danger">Delete Account</button>
+                </form>
+            </div>
+        </div>
+    </div>
+<script>
+    // // Formhanding
+    function getCookie(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return parts.pop().split(';').shift();
+    }
+    document.getElementById('profile-update').addEventListener('submit', (event) => {
+        event.preventDefault(); // Prevent default form submission
+
+        const data = {
+            email: document.getElementById('new-email').value,
+            password: document.getElementById('new-password').value
+        };  
+        fetch("/profile", {
+            method: 'PATCH',
+            headers: {
+                'X-CSRF-TOKEN': getCookie('csrf_access_token'),
+                'Content-Type': 'application/json'
+            },
+            
+            body: JSON.stringify(data)
+        })
+        .then(response=>response.json())
+        .then(data=>{
+            //
+            document.getElementById('success-profile-update').innerHTML =
+            '<div class="alert alert-success alert-dismissible fade show" role="alert"> \
+                        <i class="fa fa-exclamation-circle me-2"></i>Profile Updated Successfully! \
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>\
+                    </div>';
+            console.log('data')
+        })
+        .catch(error => console.error(error));
+    });
+    document.getElementById('profile-delete').addEventListener('submit', (event) => {
+        event.preventDefault(); // Prevent default form submission    
+        fetch("/account", {
+            method: 'DELETE',
+            headers: {
+                'X-CSRF-TOKEN': getCookie('csrf_access_token'),
+                'Content-Type': 'application/json'
+            },
+
+        })
+        .then(response=>response.json())
+        .then(data=>{
+            document.getElementById('success-profile-delete').innerHTML =
+            '<div class="alert alert-danger fade show" role="alert"> \
+                        <i class="fa fa-exclamation-circle me-2"></i>Profile Deleted Successfully! Redirecting... \
+                    </div>';
+            setTimeout(() => {
+                window.location.href = data.success_url
+            }, 1500);
+        })
+        .catch(error => console.error(error));
+    });
+
+
+</script>
+{% endblock dashboard %}
