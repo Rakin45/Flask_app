@@ -1,0 +1,443 @@
+2024-04-19 15:25:45,436 - WARNING -  * Debugger is active!
+2024-04-19 15:25:45,436 - INFO -  * Debugger PIN: 171-447-702
+2024-04-19 10:40:51,735 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-19 10:40:51,735 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-19 10:40:55,430 - INFO - Request: GET http://127.0.0.1:5000/ - IP: 127.0.0.1
+2024-04-19 10:40:55,585 - INFO - 127.0.0.1 - - [19/Apr/2024 10:40:55] "GET / HTTP/1.1" 200 -
+2024-04-19 10:40:55,608 - INFO - Request: GET http://127.0.0.1:5000/static/lib/owlcarousel/assets/owl.carousel.min.css - IP: 127.0.0.1
+2024-04-19 10:40:55,609 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css - IP: 127.0.0.1
+2024-04-19 10:40:55,609 - INFO - Request: GET http://127.0.0.1:5000/static/css/bootstrap.min.css - IP: 127.0.0.1
+2024-04-19 10:40:55,609 - INFO - Request: GET http://127.0.0.1:5000/static/css/style.css - IP: 127.0.0.1
+2024-04-19 10:40:55,610 - INFO - Request: GET http://127.0.0.1:5000/static/lib/chart/chart.min.js - IP: 127.0.0.1
+2024-04-19 10:40:55,610 - INFO - Request: GET http://127.0.0.1:5000/static/lib/easing/easing.min.js - IP: 127.0.0.1
+2024-04-19 10:40:55,612 - INFO - 127.0.0.1 - - [19/Apr/2024 10:40:55] "GET /static/lib/owlcarousel/assets/owl.carousel.min.css HTTP/1.1" 200 -
+2024-04-19 10:40:55,612 - INFO - 127.0.0.1 - - [19/Apr/2024 10:40:55] "GET /static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css HTTP/1.1" 200 -
+2024-04-19 10:40:55,612 - INFO - 127.0.0.1 - - [19/Apr/2024 10:40:55] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2024-04-19 10:40:55,613 - INFO - 127.0.0.1 - - [19/Apr/2024 10:40:55] "GET /static/css/style.css HTTP/1.1" 200 -
+2024-04-19 10:40:55,613 - INFO - 127.0.0.1 - - [19/Apr/2024 10:40:55] "GET /static/lib/chart/chart.min.js HTTP/1.1" 200 -
+2024-04-19 10:40:55,614 - INFO - 127.0.0.1 - - [19/Apr/2024 10:40:55] "GET /static/lib/easing/easing.min.js HTTP/1.1" 200 -
+2024-04-19 10:40:55,615 - INFO - Request: GET http://127.0.0.1:5000/static/lib/waypoints/waypoints.min.js - IP: 127.0.0.1
+2024-04-19 10:40:55,618 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/moment.min.js - IP: 127.0.0.1
+2024-04-19 10:40:55,621 - INFO - Request: GET http://127.0.0.1:5000/static/lib/owlcarousel/owl.carousel.min.js - IP: 127.0.0.1
+2024-04-19 10:40:55,624 - INFO - 127.0.0.1 - - [19/Apr/2024 10:40:55] "GET /static/lib/waypoints/waypoints.min.js HTTP/1.1" 200 -
+2024-04-19 10:40:55,625 - INFO - 127.0.0.1 - - [19/Apr/2024 10:40:55] "GET /static/lib/tempusdominus/js/moment.min.js HTTP/1.1" 200 -
+2024-04-19 10:40:55,626 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/moment-timezone.min.js - IP: 127.0.0.1
+2024-04-19 10:40:55,627 - INFO - 127.0.0.1 - - [19/Apr/2024 10:40:55] "GET /static/lib/owlcarousel/owl.carousel.min.js HTTP/1.1" 200 -
+2024-04-19 10:40:55,628 - INFO - 127.0.0.1 - - [19/Apr/2024 10:40:55] "GET /static/lib/tempusdominus/js/moment-timezone.min.js HTTP/1.1" 200 -
+2024-04-19 10:40:55,629 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js - IP: 127.0.0.1
+2024-04-19 10:40:55,631 - INFO - 127.0.0.1 - - [19/Apr/2024 10:40:55] "GET /static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js HTTP/1.1" 200 -
+2024-04-19 10:40:55,635 - INFO - Request: GET http://127.0.0.1:5000/static/js/main.js - IP: 127.0.0.1
+2024-04-19 10:40:55,635 - INFO - Request: GET http://127.0.0.1:5000/static/js/index.js - IP: 127.0.0.1
+2024-04-19 10:40:55,637 - INFO - 127.0.0.1 - - [19/Apr/2024 10:40:55] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-04-19 10:40:55,638 - INFO - 127.0.0.1 - - [19/Apr/2024 10:40:55] "GET /static/js/index.js HTTP/1.1" 200 -
+2024-04-19 10:40:56,288 - INFO - Request: GET http://127.0.0.1:5000/img/favicon.ico - IP: 127.0.0.1
+2024-04-19 10:40:56,288 - INFO - 127.0.0.1 - - [19/Apr/2024 10:40:56] "[33mGET /img/favicon.ico HTTP/1.1[0m" 404 -
+2024-04-19 10:40:57,746 - INFO - Request: GET http://127.0.0.1:5000/login - IP: 127.0.0.1
+2024-04-19 10:40:57,749 - INFO - 127.0.0.1 - - [19/Apr/2024 10:40:57] "GET /login HTTP/1.1" 200 -
+2024-04-19 10:40:57,774 - INFO - Request: GET http://127.0.0.1:5000/static/lib/owlcarousel/assets/owl.carousel.min.css - IP: 127.0.0.1
+2024-04-19 10:40:57,775 - INFO - 127.0.0.1 - - [19/Apr/2024 10:40:57] "[36mGET /static/lib/owlcarousel/assets/owl.carousel.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:40:57,777 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css - IP: 127.0.0.1
+2024-04-19 10:40:57,778 - INFO - Request: GET http://127.0.0.1:5000/static/css/bootstrap.min.css - IP: 127.0.0.1
+2024-04-19 10:40:57,778 - INFO - Request: GET http://127.0.0.1:5000/static/css/style.css - IP: 127.0.0.1
+2024-04-19 10:40:57,779 - INFO - 127.0.0.1 - - [19/Apr/2024 10:40:57] "[36mGET /static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:40:57,779 - INFO - Request: GET http://127.0.0.1:5000/static/lib/chart/chart.min.js - IP: 127.0.0.1
+2024-04-19 10:40:57,781 - INFO - 127.0.0.1 - - [19/Apr/2024 10:40:57] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:40:57,781 - INFO - Request: GET http://127.0.0.1:5000/static/lib/easing/easing.min.js - IP: 127.0.0.1
+2024-04-19 10:40:57,782 - INFO - 127.0.0.1 - - [19/Apr/2024 10:40:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-04-19 10:40:57,782 - INFO - Request: GET http://127.0.0.1:5000/static/lib/waypoints/waypoints.min.js - IP: 127.0.0.1
+2024-04-19 10:40:57,782 - INFO - 127.0.0.1 - - [19/Apr/2024 10:40:57] "[36mGET /static/lib/chart/chart.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:40:57,785 - INFO - Request: GET http://127.0.0.1:5000/static/lib/owlcarousel/owl.carousel.min.js - IP: 127.0.0.1
+2024-04-19 10:40:57,785 - INFO - 127.0.0.1 - - [19/Apr/2024 10:40:57] "[36mGET /static/lib/easing/easing.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:40:57,786 - INFO - 127.0.0.1 - - [19/Apr/2024 10:40:57] "[36mGET /static/lib/waypoints/waypoints.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:40:57,787 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/moment.min.js - IP: 127.0.0.1
+2024-04-19 10:40:57,788 - INFO - 127.0.0.1 - - [19/Apr/2024 10:40:57] "[36mGET /static/lib/owlcarousel/owl.carousel.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:40:57,788 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/moment-timezone.min.js - IP: 127.0.0.1
+2024-04-19 10:40:57,792 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js - IP: 127.0.0.1
+2024-04-19 10:40:57,792 - INFO - 127.0.0.1 - - [19/Apr/2024 10:40:57] "[36mGET /static/lib/tempusdominus/js/moment.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:40:57,793 - INFO - 127.0.0.1 - - [19/Apr/2024 10:40:57] "[36mGET /static/lib/tempusdominus/js/moment-timezone.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:40:57,794 - INFO - Request: GET http://127.0.0.1:5000/static/js/main.js - IP: 127.0.0.1
+2024-04-19 10:40:57,794 - INFO - 127.0.0.1 - - [19/Apr/2024 10:40:57] "[36mGET /static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:40:57,796 - INFO - Request: GET http://127.0.0.1:5000/static/js/index.js - IP: 127.0.0.1
+2024-04-19 10:40:57,797 - INFO - 127.0.0.1 - - [19/Apr/2024 10:40:57] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-04-19 10:40:57,799 - INFO - 127.0.0.1 - - [19/Apr/2024 10:40:57] "[36mGET /static/js/index.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:01,891 - INFO - Request: POST http://127.0.0.1:5000/login - IP: 127.0.0.1
+2024-04-19 10:41:01,897 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:01] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2024-04-19 10:41:09,791 - INFO - Request: GET http://127.0.0.1:5000/signup - IP: 127.0.0.1
+2024-04-19 10:41:09,798 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:09] "GET /signup HTTP/1.1" 200 -
+2024-04-19 10:41:09,829 - INFO - Request: GET http://127.0.0.1:5000/static/lib/owlcarousel/assets/owl.carousel.min.css - IP: 127.0.0.1
+2024-04-19 10:41:09,830 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:09] "[36mGET /static/lib/owlcarousel/assets/owl.carousel.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:09,831 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css - IP: 127.0.0.1
+2024-04-19 10:41:09,832 - INFO - Request: GET http://127.0.0.1:5000/static/css/bootstrap.min.css - IP: 127.0.0.1
+2024-04-19 10:41:09,832 - INFO - Request: GET http://127.0.0.1:5000/static/css/style.css - IP: 127.0.0.1
+2024-04-19 10:41:09,833 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:09] "[36mGET /static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:09,833 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:09] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:09,834 - INFO - Request: GET http://127.0.0.1:5000/static/lib/chart/chart.min.js - IP: 127.0.0.1
+2024-04-19 10:41:09,834 - INFO - Request: GET http://127.0.0.1:5000/static/lib/easing/easing.min.js - IP: 127.0.0.1
+2024-04-19 10:41:09,834 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:09,837 - INFO - Request: GET http://127.0.0.1:5000/static/lib/waypoints/waypoints.min.js - IP: 127.0.0.1
+2024-04-19 10:41:09,838 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:09] "[36mGET /static/lib/chart/chart.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:09,839 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:09] "[36mGET /static/lib/easing/easing.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:09,839 - INFO - Request: GET http://127.0.0.1:5000/static/lib/owlcarousel/owl.carousel.min.js - IP: 127.0.0.1
+2024-04-19 10:41:09,841 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/moment.min.js - IP: 127.0.0.1
+2024-04-19 10:41:09,841 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:09] "[36mGET /static/lib/waypoints/waypoints.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:09,844 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/moment-timezone.min.js - IP: 127.0.0.1
+2024-04-19 10:41:09,845 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:09] "[36mGET /static/lib/tempusdominus/js/moment.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:09,846 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:09] "[36mGET /static/lib/owlcarousel/owl.carousel.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:09,847 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:09] "[36mGET /static/lib/tempusdominus/js/moment-timezone.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:09,847 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js - IP: 127.0.0.1
+2024-04-19 10:41:09,850 - INFO - Request: GET http://127.0.0.1:5000/static/js/main.js - IP: 127.0.0.1
+2024-04-19 10:41:09,851 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:09] "[36mGET /static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:09,854 - INFO - Request: GET http://127.0.0.1:5000/static/js/index.js - IP: 127.0.0.1
+2024-04-19 10:41:09,855 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:09] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:09,855 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:09] "[36mGET /static/js/index.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:17,888 - INFO - Request: POST http://127.0.0.1:5000/signup - IP: 127.0.0.1
+2024-04-19 10:41:17,980 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:17] "[35m[1mPOST /signup HTTP/1.1[0m" 201 -
+2024-04-19 10:41:19,637 - INFO - Request: GET http://127.0.0.1:5000/login - IP: 127.0.0.1
+2024-04-19 10:41:19,637 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:19] "GET /login HTTP/1.1" 200 -
+2024-04-19 10:41:19,663 - INFO - Request: GET http://127.0.0.1:5000/static/lib/owlcarousel/assets/owl.carousel.min.css - IP: 127.0.0.1
+2024-04-19 10:41:19,664 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:19] "[36mGET /static/lib/owlcarousel/assets/owl.carousel.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:19,665 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css - IP: 127.0.0.1
+2024-04-19 10:41:19,666 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:19] "[36mGET /static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:19,666 - INFO - Request: GET http://127.0.0.1:5000/static/css/bootstrap.min.css - IP: 127.0.0.1
+2024-04-19 10:41:19,667 - INFO - Request: GET http://127.0.0.1:5000/static/css/style.css - IP: 127.0.0.1
+2024-04-19 10:41:19,668 - INFO - Request: GET http://127.0.0.1:5000/static/lib/chart/chart.min.js - IP: 127.0.0.1
+2024-04-19 10:41:19,669 - INFO - Request: GET http://127.0.0.1:5000/static/lib/easing/easing.min.js - IP: 127.0.0.1
+2024-04-19 10:41:19,670 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:19] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:19,671 - INFO - Request: GET http://127.0.0.1:5000/static/lib/waypoints/waypoints.min.js - IP: 127.0.0.1
+2024-04-19 10:41:19,671 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:19,672 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:19] "[36mGET /static/lib/chart/chart.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:19,672 - INFO - Request: GET http://127.0.0.1:5000/static/lib/owlcarousel/owl.carousel.min.js - IP: 127.0.0.1
+2024-04-19 10:41:19,673 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:19] "[36mGET /static/lib/easing/easing.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:19,673 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:19] "[36mGET /static/lib/waypoints/waypoints.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:19,674 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/moment.min.js - IP: 127.0.0.1
+2024-04-19 10:41:19,678 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:19] "[36mGET /static/lib/owlcarousel/owl.carousel.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:19,678 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/moment-timezone.min.js - IP: 127.0.0.1
+2024-04-19 10:41:19,681 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:19] "[36mGET /static/lib/tempusdominus/js/moment.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:19,682 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js - IP: 127.0.0.1
+2024-04-19 10:41:19,684 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:19] "[36mGET /static/lib/tempusdominus/js/moment-timezone.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:19,685 - INFO - Request: GET http://127.0.0.1:5000/static/js/main.js - IP: 127.0.0.1
+2024-04-19 10:41:19,686 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:19] "[36mGET /static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:19,687 - INFO - Request: GET http://127.0.0.1:5000/static/js/index.js - IP: 127.0.0.1
+2024-04-19 10:41:19,688 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:19] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:19,690 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:19] "[36mGET /static/js/index.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:24,273 - INFO - Request: POST http://127.0.0.1:5000/login - IP: 127.0.0.1
+2024-04-19 10:41:24,358 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:24] "POST /login HTTP/1.1" 200 -
+2024-04-19 10:41:24,372 - INFO - Request: GET http://127.0.0.1:5000/dashboard - IP: 127.0.0.1
+2024-04-19 10:41:24,387 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:24] "GET /dashboard HTTP/1.1" 200 -
+2024-04-19 10:41:24,410 - INFO - Request: GET http://127.0.0.1:5000/static/lib/owlcarousel/assets/owl.carousel.min.css - IP: 127.0.0.1
+2024-04-19 10:41:24,411 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:24] "[36mGET /static/lib/owlcarousel/assets/owl.carousel.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:24,413 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css - IP: 127.0.0.1
+2024-04-19 10:41:24,415 - INFO - Request: GET http://127.0.0.1:5000/static/css/style.css - IP: 127.0.0.1
+2024-04-19 10:41:24,416 - INFO - Request: GET http://127.0.0.1:5000/static/lib/chart/chart.min.js - IP: 127.0.0.1
+2024-04-19 10:41:24,416 - INFO - Request: GET http://127.0.0.1:5000/static/css/bootstrap.min.css - IP: 127.0.0.1
+2024-04-19 10:41:24,417 - INFO - Request: GET http://127.0.0.1:5000/static/lib/easing/easing.min.js - IP: 127.0.0.1
+2024-04-19 10:41:24,417 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:24] "[36mGET /static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:24,418 - INFO - Request: GET http://127.0.0.1:5000/static/lib/waypoints/waypoints.min.js - IP: 127.0.0.1
+2024-04-19 10:41:24,418 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:24,418 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:24] "[36mGET /static/lib/chart/chart.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:24,419 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:24] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:24,419 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:24] "[36mGET /static/lib/easing/easing.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:24,421 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:24] "[36mGET /static/lib/waypoints/waypoints.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:24,423 - INFO - Request: GET http://127.0.0.1:5000/static/lib/owlcarousel/owl.carousel.min.js - IP: 127.0.0.1
+2024-04-19 10:41:24,427 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/moment.min.js - IP: 127.0.0.1
+2024-04-19 10:41:24,428 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/moment-timezone.min.js - IP: 127.0.0.1
+2024-04-19 10:41:24,428 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:24] "[36mGET /static/lib/owlcarousel/owl.carousel.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:24,429 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js - IP: 127.0.0.1
+2024-04-19 10:41:24,430 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:24] "[36mGET /static/lib/tempusdominus/js/moment.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:24,430 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:24] "[36mGET /static/lib/tempusdominus/js/moment-timezone.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:24,432 - INFO - Request: GET http://127.0.0.1:5000/static/js/main.js - IP: 127.0.0.1
+2024-04-19 10:41:24,432 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:24] "[36mGET /static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:24,433 - INFO - Request: GET http://127.0.0.1:5000/static/js/index.js - IP: 127.0.0.1
+2024-04-19 10:41:24,434 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:24] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:24,437 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:24] "[36mGET /static/js/index.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:26,082 - INFO - Request: GET http://127.0.0.1:5000/predictions - IP: 127.0.0.1
+2024-04-19 10:41:26,087 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:26] "GET /predictions HTTP/1.1" 200 -
+2024-04-19 10:41:26,112 - INFO - Request: GET http://127.0.0.1:5000/static/lib/owlcarousel/assets/owl.carousel.min.css - IP: 127.0.0.1
+2024-04-19 10:41:26,113 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css - IP: 127.0.0.1
+2024-04-19 10:41:26,114 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:26] "[36mGET /static/lib/owlcarousel/assets/owl.carousel.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:26,115 - INFO - Request: GET http://127.0.0.1:5000/static/css/bootstrap.min.css - IP: 127.0.0.1
+2024-04-19 10:41:26,115 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:26] "[36mGET /static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:26,116 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:26] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:26,118 - INFO - Request: GET http://127.0.0.1:5000/static/css/style.css - IP: 127.0.0.1
+2024-04-19 10:41:26,121 - INFO - Request: GET http://127.0.0.1:5000/static/lib/chart/chart.min.js - IP: 127.0.0.1
+2024-04-19 10:41:26,122 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:26,122 - INFO - Request: GET http://127.0.0.1:5000/static/lib/easing/easing.min.js - IP: 127.0.0.1
+2024-04-19 10:41:26,123 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:26] "[36mGET /static/lib/chart/chart.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:26,124 - INFO - Request: GET http://127.0.0.1:5000/static/lib/waypoints/waypoints.min.js - IP: 127.0.0.1
+2024-04-19 10:41:26,124 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:26] "[36mGET /static/lib/easing/easing.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:26,126 - INFO - Request: GET http://127.0.0.1:5000/static/lib/owlcarousel/owl.carousel.min.js - IP: 127.0.0.1
+2024-04-19 10:41:26,126 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:26] "[36mGET /static/lib/waypoints/waypoints.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:26,129 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/moment.min.js - IP: 127.0.0.1
+2024-04-19 10:41:26,129 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:26] "[36mGET /static/lib/owlcarousel/owl.carousel.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:26,131 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/moment-timezone.min.js - IP: 127.0.0.1
+2024-04-19 10:41:26,131 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:26] "[36mGET /static/lib/tempusdominus/js/moment.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:26,133 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js - IP: 127.0.0.1
+2024-04-19 10:41:26,133 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:26] "[36mGET /static/lib/tempusdominus/js/moment-timezone.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:26,135 - INFO - Request: GET http://127.0.0.1:5000/static/js/main.js - IP: 127.0.0.1
+2024-04-19 10:41:26,136 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:26] "[36mGET /static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:26,137 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:26] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:26,137 - INFO - Request: GET http://127.0.0.1:5000/static/js/index.js - IP: 127.0.0.1
+2024-04-19 10:41:26,139 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:26] "[36mGET /static/js/index.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:26,216 - INFO - Request: GET http://127.0.0.1:5000/water_quality_data?_=1713519686155 - IP: 127.0.0.1
+2024-04-19 10:41:26,217 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:26] "GET /water_quality_data?_=1713519686155 HTTP/1.1" 200 -
+2024-04-19 10:41:27,409 - INFO - Request: GET http://127.0.0.1:5000/insights - IP: 127.0.0.1
+2024-04-19 10:41:27,415 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:27] "GET /insights HTTP/1.1" 200 -
+2024-04-19 10:41:27,442 - INFO - Request: GET http://127.0.0.1:5000/static/lib/owlcarousel/assets/owl.carousel.min.css - IP: 127.0.0.1
+2024-04-19 10:41:27,443 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css - IP: 127.0.0.1
+2024-04-19 10:41:27,444 - INFO - Request: GET http://127.0.0.1:5000/static/css/bootstrap.min.css - IP: 127.0.0.1
+2024-04-19 10:41:27,444 - INFO - Request: GET http://127.0.0.1:5000/static/css/style.css - IP: 127.0.0.1
+2024-04-19 10:41:27,445 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:27] "[36mGET /static/lib/owlcarousel/assets/owl.carousel.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:27,445 - INFO - Request: GET http://127.0.0.1:5000/static/lib/chart/chart.min.js - IP: 127.0.0.1
+2024-04-19 10:41:27,445 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:27] "[36mGET /static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:27,446 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:27] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:27,447 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:27,447 - INFO - Request: GET http://127.0.0.1:5000/static/lib/easing/easing.min.js - IP: 127.0.0.1
+2024-04-19 10:41:27,448 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:27] "[36mGET /static/lib/chart/chart.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:27,450 - INFO - Request: GET http://127.0.0.1:5000/static/lib/waypoints/waypoints.min.js - IP: 127.0.0.1
+2024-04-19 10:41:27,453 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:27] "[36mGET /static/lib/easing/easing.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:27,456 - INFO - Request: GET http://127.0.0.1:5000/static/lib/owlcarousel/owl.carousel.min.js - IP: 127.0.0.1
+2024-04-19 10:41:27,458 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:27] "[36mGET /static/lib/waypoints/waypoints.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:27,459 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/moment.min.js - IP: 127.0.0.1
+2024-04-19 10:41:27,460 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:27] "[36mGET /static/lib/owlcarousel/owl.carousel.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:27,462 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/moment-timezone.min.js - IP: 127.0.0.1
+2024-04-19 10:41:27,463 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:27] "[36mGET /static/lib/tempusdominus/js/moment.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:27,465 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js - IP: 127.0.0.1
+2024-04-19 10:41:27,465 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:27] "[36mGET /static/lib/tempusdominus/js/moment-timezone.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:27,466 - INFO - Request: GET http://127.0.0.1:5000/static/js/main.js - IP: 127.0.0.1
+2024-04-19 10:41:27,468 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:27] "[36mGET /static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:27,469 - INFO - Request: GET http://127.0.0.1:5000/static/js/index.js - IP: 127.0.0.1
+2024-04-19 10:41:27,470 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:27] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:27,470 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:27] "[36mGET /static/js/index.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:28,917 - INFO - Request: GET http://127.0.0.1:5000/profile - IP: 127.0.0.1
+2024-04-19 10:41:28,921 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:28] "GET /profile HTTP/1.1" 200 -
+2024-04-19 10:41:28,946 - INFO - Request: GET http://127.0.0.1:5000/static/lib/owlcarousel/assets/owl.carousel.min.css - IP: 127.0.0.1
+2024-04-19 10:41:28,947 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css - IP: 127.0.0.1
+2024-04-19 10:41:28,947 - INFO - Request: GET http://127.0.0.1:5000/static/css/bootstrap.min.css - IP: 127.0.0.1
+2024-04-19 10:41:28,948 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:28] "[36mGET /static/lib/owlcarousel/assets/owl.carousel.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:28,949 - INFO - Request: GET http://127.0.0.1:5000/static/css/style.css - IP: 127.0.0.1
+2024-04-19 10:41:28,949 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:28] "[36mGET /static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:28,950 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:28] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:28,952 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:28,954 - INFO - Request: GET http://127.0.0.1:5000/static/lib/chart/chart.min.js - IP: 127.0.0.1
+2024-04-19 10:41:28,955 - INFO - Request: GET http://127.0.0.1:5000/static/lib/easing/easing.min.js - IP: 127.0.0.1
+2024-04-19 10:41:28,957 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:28] "[36mGET /static/lib/chart/chart.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:28,957 - INFO - Request: GET http://127.0.0.1:5000/static/lib/waypoints/waypoints.min.js - IP: 127.0.0.1
+2024-04-19 10:41:28,957 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:28] "[36mGET /static/lib/easing/easing.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:28,958 - INFO - Request: GET http://127.0.0.1:5000/static/lib/owlcarousel/owl.carousel.min.js - IP: 127.0.0.1
+2024-04-19 10:41:28,959 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:28] "[36mGET /static/lib/waypoints/waypoints.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:28,960 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/moment.min.js - IP: 127.0.0.1
+2024-04-19 10:41:28,962 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:28] "[36mGET /static/lib/owlcarousel/owl.carousel.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:28,962 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:28] "[36mGET /static/lib/tempusdominus/js/moment.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:28,963 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/moment-timezone.min.js - IP: 127.0.0.1
+2024-04-19 10:41:28,966 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js - IP: 127.0.0.1
+2024-04-19 10:41:28,967 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:28] "[36mGET /static/lib/tempusdominus/js/moment-timezone.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:28,967 - INFO - Request: GET http://127.0.0.1:5000/static/js/main.js - IP: 127.0.0.1
+2024-04-19 10:41:28,968 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:28] "[36mGET /static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:28,969 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:28] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:28,969 - INFO - Request: GET http://127.0.0.1:5000/static/js/index.js - IP: 127.0.0.1
+2024-04-19 10:41:28,971 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:28] "[36mGET /static/js/index.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:32,430 - INFO - Request: GET http://127.0.0.1:5000/insights - IP: 127.0.0.1
+2024-04-19 10:41:32,433 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:32] "GET /insights HTTP/1.1" 200 -
+2024-04-19 10:41:32,461 - INFO - Request: GET http://127.0.0.1:5000/static/lib/owlcarousel/assets/owl.carousel.min.css - IP: 127.0.0.1
+2024-04-19 10:41:32,461 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css - IP: 127.0.0.1
+2024-04-19 10:41:32,462 - INFO - Request: GET http://127.0.0.1:5000/static/css/bootstrap.min.css - IP: 127.0.0.1
+2024-04-19 10:41:32,463 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:32] "[36mGET /static/lib/owlcarousel/assets/owl.carousel.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:32,463 - INFO - Request: GET http://127.0.0.1:5000/static/css/style.css - IP: 127.0.0.1
+2024-04-19 10:41:32,463 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:32] "[36mGET /static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:32,464 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:32] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:32,465 - INFO - Request: GET http://127.0.0.1:5000/static/lib/chart/chart.min.js - IP: 127.0.0.1
+2024-04-19 10:41:32,465 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:32,467 - INFO - Request: GET http://127.0.0.1:5000/static/lib/easing/easing.min.js - IP: 127.0.0.1
+2024-04-19 10:41:32,469 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:32] "[36mGET /static/lib/chart/chart.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:32,470 - INFO - Request: GET http://127.0.0.1:5000/static/lib/waypoints/waypoints.min.js - IP: 127.0.0.1
+2024-04-19 10:41:32,470 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:32] "[36mGET /static/lib/easing/easing.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:32,472 - INFO - Request: GET http://127.0.0.1:5000/static/lib/owlcarousel/owl.carousel.min.js - IP: 127.0.0.1
+2024-04-19 10:41:32,473 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:32] "[36mGET /static/lib/waypoints/waypoints.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:32,474 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:32] "[36mGET /static/lib/owlcarousel/owl.carousel.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:32,475 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/moment.min.js - IP: 127.0.0.1
+2024-04-19 10:41:32,476 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/moment-timezone.min.js - IP: 127.0.0.1
+2024-04-19 10:41:32,477 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:32] "[36mGET /static/lib/tempusdominus/js/moment.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:32,478 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js - IP: 127.0.0.1
+2024-04-19 10:41:32,479 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:32] "[36mGET /static/lib/tempusdominus/js/moment-timezone.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:32,479 - INFO - Request: GET http://127.0.0.1:5000/static/js/main.js - IP: 127.0.0.1
+2024-04-19 10:41:32,481 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:32] "[36mGET /static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:32,482 - INFO - Request: GET http://127.0.0.1:5000/static/js/index.js - IP: 127.0.0.1
+2024-04-19 10:41:32,483 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:32] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:32,483 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:32] "[36mGET /static/js/index.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:32,857 - INFO - Request: GET http://127.0.0.1:5000/predictions - IP: 127.0.0.1
+2024-04-19 10:41:32,860 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:32] "GET /predictions HTTP/1.1" 200 -
+2024-04-19 10:41:32,883 - INFO - Request: GET http://127.0.0.1:5000/static/lib/owlcarousel/assets/owl.carousel.min.css - IP: 127.0.0.1
+2024-04-19 10:41:32,884 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:32] "[36mGET /static/lib/owlcarousel/assets/owl.carousel.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:32,885 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css - IP: 127.0.0.1
+2024-04-19 10:41:32,886 - INFO - Request: GET http://127.0.0.1:5000/static/css/bootstrap.min.css - IP: 127.0.0.1
+2024-04-19 10:41:32,887 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:32] "[36mGET /static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:32,888 - INFO - Request: GET http://127.0.0.1:5000/static/css/style.css - IP: 127.0.0.1
+2024-04-19 10:41:32,888 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:32] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:32,889 - INFO - Request: GET http://127.0.0.1:5000/static/lib/chart/chart.min.js - IP: 127.0.0.1
+2024-04-19 10:41:32,890 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:32,892 - INFO - Request: GET http://127.0.0.1:5000/static/lib/easing/easing.min.js - IP: 127.0.0.1
+2024-04-19 10:41:32,893 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:32] "[36mGET /static/lib/chart/chart.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:32,895 - INFO - Request: GET http://127.0.0.1:5000/static/lib/waypoints/waypoints.min.js - IP: 127.0.0.1
+2024-04-19 10:41:32,896 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:32] "[36mGET /static/lib/easing/easing.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:32,897 - INFO - Request: GET http://127.0.0.1:5000/static/lib/owlcarousel/owl.carousel.min.js - IP: 127.0.0.1
+2024-04-19 10:41:32,897 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:32] "[36mGET /static/lib/waypoints/waypoints.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:32,898 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/moment.min.js - IP: 127.0.0.1
+2024-04-19 10:41:32,899 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:32] "[36mGET /static/lib/owlcarousel/owl.carousel.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:32,900 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/moment-timezone.min.js - IP: 127.0.0.1
+2024-04-19 10:41:32,901 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:32] "[36mGET /static/lib/tempusdominus/js/moment.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:32,903 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js - IP: 127.0.0.1
+2024-04-19 10:41:32,904 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:32] "[36mGET /static/lib/tempusdominus/js/moment-timezone.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:32,905 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:32] "[36mGET /static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:32,906 - INFO - Request: GET http://127.0.0.1:5000/static/js/main.js - IP: 127.0.0.1
+2024-04-19 10:41:32,907 - INFO - Request: GET http://127.0.0.1:5000/static/js/index.js - IP: 127.0.0.1
+2024-04-19 10:41:32,908 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:32] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:32,910 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:32] "[36mGET /static/js/index.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:32,973 - INFO - Request: GET http://127.0.0.1:5000/water_quality_data?_=1713519692925 - IP: 127.0.0.1
+2024-04-19 10:41:32,975 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:32] "GET /water_quality_data?_=1713519692925 HTTP/1.1" 200 -
+2024-04-19 10:41:33,344 - INFO - Request: GET http://127.0.0.1:5000/dashboard - IP: 127.0.0.1
+2024-04-19 10:41:33,346 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:33] "GET /dashboard HTTP/1.1" 200 -
+2024-04-19 10:41:33,372 - INFO - Request: GET http://127.0.0.1:5000/static/lib/owlcarousel/assets/owl.carousel.min.css - IP: 127.0.0.1
+2024-04-19 10:41:33,372 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css - IP: 127.0.0.1
+2024-04-19 10:41:33,372 - INFO - Request: GET http://127.0.0.1:5000/static/css/bootstrap.min.css - IP: 127.0.0.1
+2024-04-19 10:41:33,373 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:33] "[36mGET /static/lib/owlcarousel/assets/owl.carousel.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:33,374 - INFO - Request: GET http://127.0.0.1:5000/static/css/style.css - IP: 127.0.0.1
+2024-04-19 10:41:33,375 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:33] "[36mGET /static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:33,375 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:33] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:33,376 - INFO - Request: GET http://127.0.0.1:5000/static/lib/chart/chart.min.js - IP: 127.0.0.1
+2024-04-19 10:41:33,376 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:33,377 - INFO - Request: GET http://127.0.0.1:5000/static/lib/easing/easing.min.js - IP: 127.0.0.1
+2024-04-19 10:41:33,378 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:33] "[36mGET /static/lib/chart/chart.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:33,380 - INFO - Request: GET http://127.0.0.1:5000/static/lib/waypoints/waypoints.min.js - IP: 127.0.0.1
+2024-04-19 10:41:33,382 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:33] "[36mGET /static/lib/easing/easing.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:33,383 - INFO - Request: GET http://127.0.0.1:5000/static/lib/owlcarousel/owl.carousel.min.js - IP: 127.0.0.1
+2024-04-19 10:41:33,384 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:33] "[36mGET /static/lib/waypoints/waypoints.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:33,385 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/moment.min.js - IP: 127.0.0.1
+2024-04-19 10:41:33,385 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:33] "[36mGET /static/lib/owlcarousel/owl.carousel.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:33,386 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/moment-timezone.min.js - IP: 127.0.0.1
+2024-04-19 10:41:33,388 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:33] "[36mGET /static/lib/tempusdominus/js/moment.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:33,388 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js - IP: 127.0.0.1
+2024-04-19 10:41:33,389 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:33] "[36mGET /static/lib/tempusdominus/js/moment-timezone.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:33,391 - INFO - Request: GET http://127.0.0.1:5000/static/js/main.js - IP: 127.0.0.1
+2024-04-19 10:41:33,392 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:33] "[36mGET /static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:33,392 - INFO - Request: GET http://127.0.0.1:5000/static/js/index.js - IP: 127.0.0.1
+2024-04-19 10:41:33,393 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:33] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:33,394 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:33] "[36mGET /static/js/index.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:34,904 - INFO - Request: GET http://127.0.0.1:5000/predictions - IP: 127.0.0.1
+2024-04-19 10:41:34,906 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:34] "GET /predictions HTTP/1.1" 200 -
+2024-04-19 10:41:34,933 - INFO - Request: GET http://127.0.0.1:5000/static/lib/owlcarousel/assets/owl.carousel.min.css - IP: 127.0.0.1
+2024-04-19 10:41:34,933 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css - IP: 127.0.0.1
+2024-04-19 10:41:34,934 - INFO - Request: GET http://127.0.0.1:5000/static/css/bootstrap.min.css - IP: 127.0.0.1
+2024-04-19 10:41:34,935 - INFO - Request: GET http://127.0.0.1:5000/static/css/style.css - IP: 127.0.0.1
+2024-04-19 10:41:34,935 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:34] "[36mGET /static/lib/owlcarousel/assets/owl.carousel.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:34,936 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:34] "[36mGET /static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:34,936 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:34] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:34,937 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:34,937 - INFO - Request: GET http://127.0.0.1:5000/static/lib/chart/chart.min.js - IP: 127.0.0.1
+2024-04-19 10:41:34,940 - INFO - Request: GET http://127.0.0.1:5000/static/lib/easing/easing.min.js - IP: 127.0.0.1
+2024-04-19 10:41:34,942 - INFO - Request: GET http://127.0.0.1:5000/static/lib/waypoints/waypoints.min.js - IP: 127.0.0.1
+2024-04-19 10:41:34,943 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:34] "[36mGET /static/lib/chart/chart.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:34,943 - INFO - Request: GET http://127.0.0.1:5000/static/lib/owlcarousel/owl.carousel.min.js - IP: 127.0.0.1
+2024-04-19 10:41:34,944 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:34] "[36mGET /static/lib/easing/easing.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:34,944 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:34] "[36mGET /static/lib/waypoints/waypoints.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:34,945 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/moment.min.js - IP: 127.0.0.1
+2024-04-19 10:41:34,946 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:34] "[36mGET /static/lib/owlcarousel/owl.carousel.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:34,948 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/moment-timezone.min.js - IP: 127.0.0.1
+2024-04-19 10:41:34,949 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:34] "[36mGET /static/lib/tempusdominus/js/moment.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:34,950 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js - IP: 127.0.0.1
+2024-04-19 10:41:34,952 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:34] "[36mGET /static/lib/tempusdominus/js/moment-timezone.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:34,953 - INFO - Request: GET http://127.0.0.1:5000/static/js/main.js - IP: 127.0.0.1
+2024-04-19 10:41:34,954 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:34] "[36mGET /static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:34,954 - INFO - Request: GET http://127.0.0.1:5000/static/js/index.js - IP: 127.0.0.1
+2024-04-19 10:41:34,956 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:34] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:34,956 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:34] "[36mGET /static/js/index.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:35,014 - INFO - Request: GET http://127.0.0.1:5000/water_quality_data?_=1713519694971 - IP: 127.0.0.1
+2024-04-19 10:41:35,015 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:35] "GET /water_quality_data?_=1713519694971 HTTP/1.1" 200 -
+2024-04-19 10:41:36,727 - INFO - Request: GET http://127.0.0.1:5000/insights - IP: 127.0.0.1
+2024-04-19 10:41:36,731 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:36] "GET /insights HTTP/1.1" 200 -
+2024-04-19 10:41:36,758 - INFO - Request: GET http://127.0.0.1:5000/static/lib/owlcarousel/assets/owl.carousel.min.css - IP: 127.0.0.1
+2024-04-19 10:41:36,759 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css - IP: 127.0.0.1
+2024-04-19 10:41:36,759 - INFO - Request: GET http://127.0.0.1:5000/static/css/bootstrap.min.css - IP: 127.0.0.1
+2024-04-19 10:41:36,760 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:36] "[36mGET /static/lib/owlcarousel/assets/owl.carousel.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:36,761 - INFO - Request: GET http://127.0.0.1:5000/static/css/style.css - IP: 127.0.0.1
+2024-04-19 10:41:36,761 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:36] "[36mGET /static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:36,762 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:36] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:36,762 - INFO - Request: GET http://127.0.0.1:5000/static/lib/chart/chart.min.js - IP: 127.0.0.1
+2024-04-19 10:41:36,764 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:36,765 - INFO - Request: GET http://127.0.0.1:5000/static/lib/easing/easing.min.js - IP: 127.0.0.1
+2024-04-19 10:41:36,766 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:36] "[36mGET /static/lib/chart/chart.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:36,767 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:36] "[36mGET /static/lib/easing/easing.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:36,768 - INFO - Request: GET http://127.0.0.1:5000/static/lib/waypoints/waypoints.min.js - IP: 127.0.0.1
+2024-04-19 10:41:36,769 - INFO - Request: GET http://127.0.0.1:5000/static/lib/owlcarousel/owl.carousel.min.js - IP: 127.0.0.1
+2024-04-19 10:41:36,770 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:36] "[36mGET /static/lib/waypoints/waypoints.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:36,772 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/moment.min.js - IP: 127.0.0.1
+2024-04-19 10:41:36,773 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:36] "[36mGET /static/lib/owlcarousel/owl.carousel.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:36,774 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/moment-timezone.min.js - IP: 127.0.0.1
+2024-04-19 10:41:36,774 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:36] "[36mGET /static/lib/tempusdominus/js/moment.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:36,776 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js - IP: 127.0.0.1
+2024-04-19 10:41:36,776 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:36] "[36mGET /static/lib/tempusdominus/js/moment-timezone.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:36,778 - INFO - Request: GET http://127.0.0.1:5000/static/js/main.js - IP: 127.0.0.1
+2024-04-19 10:41:36,778 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:36] "[36mGET /static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:36,780 - INFO - Request: GET http://127.0.0.1:5000/static/js/index.js - IP: 127.0.0.1
+2024-04-19 10:41:36,780 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:36] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:36,781 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:36] "[36mGET /static/js/index.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:37,291 - INFO - Request: GET http://127.0.0.1:5000/predictions - IP: 127.0.0.1
+2024-04-19 10:41:37,294 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:37] "GET /predictions HTTP/1.1" 200 -
+2024-04-19 10:41:37,317 - INFO - Request: GET http://127.0.0.1:5000/static/lib/owlcarousel/assets/owl.carousel.min.css - IP: 127.0.0.1
+2024-04-19 10:41:37,318 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:37] "[36mGET /static/lib/owlcarousel/assets/owl.carousel.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:37,319 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css - IP: 127.0.0.1
+2024-04-19 10:41:37,320 - INFO - Request: GET http://127.0.0.1:5000/static/css/bootstrap.min.css - IP: 127.0.0.1
+2024-04-19 10:41:37,320 - INFO - Request: GET http://127.0.0.1:5000/static/css/style.css - IP: 127.0.0.1
+2024-04-19 10:41:37,322 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:37] "[36mGET /static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:37,322 - INFO - Request: GET http://127.0.0.1:5000/static/lib/chart/chart.min.js - IP: 127.0.0.1
+2024-04-19 10:41:37,323 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:37] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:37,323 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:37,324 - INFO - Request: GET http://127.0.0.1:5000/static/lib/easing/easing.min.js - IP: 127.0.0.1
+2024-04-19 10:41:37,325 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:37] "[36mGET /static/lib/chart/chart.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:37,328 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:37] "[36mGET /static/lib/easing/easing.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:37,328 - INFO - Request: GET http://127.0.0.1:5000/static/lib/waypoints/waypoints.min.js - IP: 127.0.0.1
+2024-04-19 10:41:37,330 - INFO - Request: GET http://127.0.0.1:5000/static/lib/owlcarousel/owl.carousel.min.js - IP: 127.0.0.1
+2024-04-19 10:41:37,331 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:37] "[36mGET /static/lib/waypoints/waypoints.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:37,331 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/moment.min.js - IP: 127.0.0.1
+2024-04-19 10:41:37,332 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:37] "[36mGET /static/lib/owlcarousel/owl.carousel.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:37,333 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/moment-timezone.min.js - IP: 127.0.0.1
+2024-04-19 10:41:37,333 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:37] "[36mGET /static/lib/tempusdominus/js/moment.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:37,336 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js - IP: 127.0.0.1
+2024-04-19 10:41:37,337 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:37] "[36mGET /static/lib/tempusdominus/js/moment-timezone.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:37,339 - INFO - Request: GET http://127.0.0.1:5000/static/js/main.js - IP: 127.0.0.1
+2024-04-19 10:41:37,339 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:37] "[36mGET /static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:37,340 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:37] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:37,341 - INFO - Request: GET http://127.0.0.1:5000/static/js/index.js - IP: 127.0.0.1
+2024-04-19 10:41:37,343 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:37] "[36mGET /static/js/index.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:37,401 - INFO - Request: GET http://127.0.0.1:5000/water_quality_data?_=1713519697358 - IP: 127.0.0.1
+2024-04-19 10:41:37,403 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:37] "GET /water_quality_data?_=1713519697358 HTTP/1.1" 200 -
+2024-04-19 10:41:37,542 - INFO - Request: GET http://127.0.0.1:5000/insights - IP: 127.0.0.1
+2024-04-19 10:41:37,546 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:37] "GET /insights HTTP/1.1" 200 -
+2024-04-19 10:41:37,573 - INFO - Request: GET http://127.0.0.1:5000/static/lib/owlcarousel/assets/owl.carousel.min.css - IP: 127.0.0.1
+2024-04-19 10:41:37,574 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css - IP: 127.0.0.1
+2024-04-19 10:41:37,574 - INFO - Request: GET http://127.0.0.1:5000/static/css/bootstrap.min.css - IP: 127.0.0.1
+2024-04-19 10:41:37,575 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:37] "[36mGET /static/lib/owlcarousel/assets/owl.carousel.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:37,576 - INFO - Request: GET http://127.0.0.1:5000/static/css/style.css - IP: 127.0.0.1
+2024-04-19 10:41:37,576 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:37] "[36mGET /static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:37,576 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:37] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:37,577 - INFO - Request: GET http://127.0.0.1:5000/static/lib/chart/chart.min.js - IP: 127.0.0.1
+2024-04-19 10:41:37,579 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-04-19 10:41:37,579 - INFO - Request: GET http://127.0.0.1:5000/static/lib/easing/easing.min.js - IP: 127.0.0.1
+2024-04-19 10:41:37,582 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:37] "[36mGET /static/lib/chart/chart.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:37,582 - INFO - Request: GET http://127.0.0.1:5000/static/lib/waypoints/waypoints.min.js - IP: 127.0.0.1
+2024-04-19 10:41:37,583 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:37] "[36mGET /static/lib/easing/easing.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:37,585 - INFO - Request: GET http://127.0.0.1:5000/static/lib/owlcarousel/owl.carousel.min.js - IP: 127.0.0.1
+2024-04-19 10:41:37,585 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:37] "[36mGET /static/lib/waypoints/waypoints.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:37,587 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:37] "[36mGET /static/lib/owlcarousel/owl.carousel.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:37,587 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/moment.min.js - IP: 127.0.0.1
+2024-04-19 10:41:37,588 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/moment-timezone.min.js - IP: 127.0.0.1
+2024-04-19 10:41:37,591 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:37] "[36mGET /static/lib/tempusdominus/js/moment.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:37,591 - INFO - Request: GET http://127.0.0.1:5000/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js - IP: 127.0.0.1
+2024-04-19 10:41:37,591 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:37] "[36mGET /static/lib/tempusdominus/js/moment-timezone.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:37,592 - INFO - Request: GET http://127.0.0.1:5000/static/js/main.js - IP: 127.0.0.1
+2024-04-19 10:41:37,594 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:37] "[36mGET /static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:37,595 - INFO - Request: GET http://127.0.0.1:5000/static/js/index.js - IP: 127.0.0.1
+2024-04-19 10:41:37,596 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:37] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:37,596 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:37] "[36mGET /static/js/index.js HTTP/1.1[0m" 304 -
+2024-04-19 10:41:39,176 - INFO - Request: POST http://127.0.0.1:5000/visualization_data - IP: 127.0.0.1
+2024-04-19 10:41:39,194 - INFO - 127.0.0.1 - - [19/Apr/2024 10:41:39] "POST /visualization_data HTTP/1.1" 200 -
