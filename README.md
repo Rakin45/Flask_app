@@ -105,21 +105,9 @@ After running the command, you should see output in app.log that the server is r
 To run the automated tests for this web application, use the following commands:
 
 ```
-pytest -v
-```
+playwright install
 
-### Coverage
-
-To check the test coverage, you can use the following command:
-
-```
-pytest --cov=webapp
-```
-
-For an HTML report of the coverage, run:
-
-```
-pytest --cov=webapp --cov-report html
+pytest
 ```
 
 ## Authors
