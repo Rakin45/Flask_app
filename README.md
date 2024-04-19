@@ -2,7 +2,7 @@
 
 This is GitHub repository for a web app that deploys a machine learning model using RESTAPI. The purpose of the web app is to forecast data about the quality of water at different locations on an interactive map. 
 
-This application provides an API for users to log in, upload water quality data, and view predictions and historical data insights.
+This application provides a website with a login system for users to log in, upload water quality data, and view predictions and historical data insights.
 
 ## Getting Started
 
