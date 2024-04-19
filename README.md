@@ -110,6 +110,9 @@ playwright install
 pytest
 ```
 
+8. **To use the website you must first login or signup**
+   
+   username: test123 password:test123
 ## Authors
 
 * **Rakin Ahmed** 
